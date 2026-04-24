@@ -1,0 +1,15 @@
+[project]
+name = "knn-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "isort>=8.0.1",
+    "mypy>=1.20.2",
+    "pandas>=3.0.2",
+    "pydocstyle>=6.3.0",
+    "pyyaml>=6.0.3",
+    "ruff>=0.15.11",
+    "seaborn>=0.13.2",
+]

@@ -1,0 +1,3 @@
+paths:
+  data_path: "data/sonar.all-data.csv"
+  output_path: "output/results.csv"
