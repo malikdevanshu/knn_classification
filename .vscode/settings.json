@@ -1,11 +1,18 @@
 {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.ruff": "explicit"
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
     },
-    "ruff.lint.enable": false,
-    "ruff.format.enable": false,
+    "ruff.lint.enable": true,
+    "ruff.format.enable": true,
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
-    }
+    },
+    // --- mypy integration ---
+    "python.analysis.typeCheckingMode": "off",
+    "mypy-type-checker.args": [
+        "--config-file=pyproject.toml"
+    ],
+    "mypy-type-checker.importStrategy": "fromEnvironment"
 }
