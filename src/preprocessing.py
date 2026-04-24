@@ -15,6 +15,6 @@ def splitting(
     features: pd.DataFrame, target: pd.Series, state: int
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     X_train, X_test, y_train, y_test = train_test_split(
-        features, target, test_size=0.3, random_state=state
+        features, target, test_size=0.3, random_state=state, stratify=target
     )
     return (X_train, X_test, y_train, y_test)
